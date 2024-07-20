@@ -161,6 +161,10 @@ h1{
 .Team{
     text-align: center;
     margin-top: 5rem;
+    p{
+        font-size:13px;
+        font-weight: 900;
+    }
 }
 .companies{
     display: flex;
@@ -168,19 +172,17 @@ h1{
     gap: 4rem;
 }
 .companies small{
-    font-size: 20px;
-    padding-top: 0;
-}
-.logo_sec{
-    display: flex;
-}
-small{
     margin-top:3rem;
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 17px;
 }
+.logo_sec{
+    display: flex;
+    gap: 8px;
+}
+
 .right{
     animation: right 2s ease-out both alternate;
   }
@@ -276,7 +278,7 @@ small{
 
 
   /*========================================================== M0BILE VIEW ============================================================*/
-@media(max-width: 1024px) {
+@media(max-width: 480px) {
     body{
         padding:0;
         margin: 0;
@@ -284,15 +286,56 @@ small{
     #nav-links{
         display: none;
     }
-
-
-
-
-
-
-    h1{
-        font-size: 40px;
-        margin-left:3rem;
-        width: 310px;
+/*============================= SECTION ONE =====================================*/
+    .sec1{
+        display: inline-block;
+        h1{
+            font-size: 47px;
+            margin:4rem 0 0 3.7rem;
+            width: 380px;
+        }
+        .Hero_video{
+            display: inline-block;
+            .Hero_video1{
+                width:330px;
+                height: 330px;
+                margin-left: 3rem;
+            }
+            .sex1_text p{
+                width: 350px;
+                margin-left:2rem;
+                text-align: center;
+            }
+            .cta-buttons{
+                gap: 2.5rem;
+                margin-left: 1.5rem;
+            }
+        }
+        .hero-image{
+            width: 370px;
+            height: 390px;
+            margin:2rem 2rem;
+        }
     }
+/*--======================================== SECTION TWO(RATE STAR OF THE COMPANY)============================================--*/
+    .sec2{
+        display: inline-block;
+        margin: 1rem 0 0 4.6rem;
+        padding: 0;
+    }
+        
+/*--======================================== SECTION TWO(TEAM OF COMPANY)============================================--*/
+    .Team{
+        .companies{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: .3rem;
+            align-items: center;
+            margin-left:3.5rem;
+            .logo_sec_cen{
+                margin-left: 6rem;
+            }
+        }
+    }
+    
 }
