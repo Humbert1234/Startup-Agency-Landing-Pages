@@ -1,8 +1,12 @@
 /* styles.css */
 body {
-    font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;;
-    color: #333;
+    font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: white;
+    margin: 0;
+    padding: 0;
+}
+main{
+    background: #007BFF;
 }
 li{
     list-style: none;
@@ -183,6 +187,88 @@ h1{
     gap: 8px;
 }
 
+/*--======================================== SECTION THREE (workflow)============================================--*/
+.workflow{
+     padding:3rem 4rem 3rem 4rem;
+     background:#0d172a;
+     .Team_image{
+        width: 1145px;
+        border-radius:10px;
+    }
+    .workflow1{
+        display: flex;
+        justify-content: space-between;
+
+        /* ====workflow-step===== */
+        .workflow-steps{
+            margin:2rem 0 2rem 0;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:1rem;
+            /* ====steps===== */
+            .step{
+                border-radius:2px;
+                display: flex;
+                gap: 1rem;
+                line-height: 1rem;
+                border:1.5px solid #dbdcdf;
+                border-radius:6px;
+                /* ===icons===== */
+                i{
+                    color:#dbdcdf;
+                    background: #3d4555;
+                    height:16px;
+                    margin:1rem 1rem 0 1rem;
+                    padding: 1.4rem 1.4rem;
+                    border-radius:2rem;
+                }
+                /* === title==== */
+                h3{
+                    font-size:14px;
+                    color: #dbdcdf;
+                }
+                /*==== paragrph=== */
+                p{
+                    font-size:15px;
+                    color: #5b6272;
+                    width:200px;
+                }
+
+            }
+        }
+        .Dynamic{
+            margin-left:5.7rem;
+            line-height:normal;
+            h2{
+                font-size: 40px;
+                color:#fefefe;
+                width:410px;
+            }
+            p{
+                margin-top: 0;
+                color: #8c919a;
+                width: 420px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .right{
     animation: right 2s ease-out both alternate;
   }
@@ -264,7 +350,10 @@ h1{
 
 
 
+  /*========================================================== M0BILE VIEW ============================================================*/
+  @media(max-width: 500px) {
 
+  }
 
 
 
@@ -278,7 +367,7 @@ h1{
 
 
   /*========================================================== M0BILE VIEW ============================================================*/
-@media(max-width: 480px) {
+@media(max-width: 500px) {
     body{
         padding:0;
         margin: 0;
@@ -309,6 +398,68 @@ h1{
             .cta-buttons{
                 gap: 2.5rem;
                 margin-left: 1.5rem;
+            }
+        }
+        .hero-image{
+            width: 370px;
+            height: 390px;
+            margin:2rem 2rem;
+        }
+    }
+/*--======================================== SECTION TWO(RATE STAR OF THE COMPANY)============================================--*/
+    .sec2{
+        display: inline-block;
+        margin: 1rem 0 0 4.6rem;
+        padding: 0;
+    }
+        
+/*--======================================== SECTION TWO(TEAM OF COMPANY)============================================--*/
+    .Team{
+        .companies{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: .3rem;
+            align-items: center;
+            margin-left:3.5rem;
+            .logo_sec_cen{
+                margin-left: 6rem;
+            }
+        }
+    }
+    
+}
+ /*========================================================== M0BILE VIEW ============================================================*/
+ @media(max-width:106px) {
+    body{
+        padding:0;
+        margin: 0;
+    }
+    #nav-links{
+        display: none;
+    }
+/*============================= SECTION ONE =====================================*/
+    .sec1{
+        display: inline-block;
+        h1{
+            font-size: 47px;
+            margin:4rem 0 0 1.2rem;
+            width: 380px;
+        }
+        .Hero_video{
+            display: inline-block;
+            .Hero_video1{
+                width:330px;
+                height: 330px;
+                margin-left: 1rem;
+            }
+            .sex1_text p{
+                width: 350px;
+                margin-left:.8rem;
+                text-align: center;
+            }
+            .cta-buttons{
+                gap: 1.5rem;
+                margin-left:0;
             }
         }
         .hero-image{
