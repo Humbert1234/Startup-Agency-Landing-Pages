@@ -284,4 +284,15 @@ small{
     #nav-links{
         display: none;
     }
+
+
+
+
+
+
+    h1{
+        font-size: 40px;
+        margin-left:3rem;
+        width: 310px;
+    }
 }
