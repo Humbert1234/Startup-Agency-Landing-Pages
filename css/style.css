@@ -1,0 +1,287 @@
+/* styles.css */
+body {
+    font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    color: #333;
+    background: white;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    background: #fff;
+    padding: 0.2rem 0.2rem;
+    border-bottom: 1px solid #eaeaea;
+    margin: 0 4rem 0 4rem;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+/*============================================ LOGo STYLE=============================================*/
+.logo_p{
+font-size: 20px;
+font-weight: 800;
+}
+.logo_style{
+    color: white;
+    background: #366dfc;
+    border-radius: 50%;
+    font-size:20px;
+    font-weight: 800;
+    padding: .1rem .6rem .1rem .6rem;
+}
+/*=========================================== MENU STYLE ===========================================*/
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 1.4rem 0 0  0;
+}
+
+nav ul li {
+    margin-left: 2.4rem;
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: bold;
+}
+/*============================================== FIRST SECTION ======================================*/
+.sec1{
+    display:flex;
+    justify-content: space-between;
+}
+h1{
+    font-size:60px;
+    width: 490px;
+    margin-left:6rem;
+}
+
+.Hero_video{
+    display: flex;
+    gap: 3rem;
+    margin:1.5rem 0 0 1rem;
+}
+.Hero_video .sex1_text p{
+    width:410px;
+}
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.primary-btn {
+    background: #007BFF;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.secondary-btn {
+    background: #fff;
+    border: 1px solid #007BFF;
+    border-radius:8px;
+    color: #007BFF;
+}
+.hero-image{
+    width:500px;
+    height: 500px;
+}
+/*--======================================== SECTION TWO============================================--*/
+.sec2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem 0 16rem;
+}
+.ratings {
+    display: flex;
+    gap: 1.5rem;
+    margin-top:1.2rem;
+}
+.rating1 i{
+    color:hsl(50, 81%, 56%);
+    font-size: 15px;
+}
+.rating1 p{
+    line-height: 1px;
+    margin-bottom:12px;
+}
+.rating1 p{
+    font-size:25px;
+    font-weight: 600;
+}
+.rating .green_star{
+     color:#20A46D;
+     font-size: 15px;
+}
+.rating{
+    margin-top:.5rem;
+}
+.rating p{
+    font-size: 12px;
+    font-weight:600;
+}
+.rating .green_star_bg i{
+    color: white;
+    background: #20A46D;
+    font-size: 12px;
+    padding: .2rem .2rem;
+}
+.experience{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    span{
+        color: grey;
+    }
+}
+.line{
+    width: 2px;
+    height: 3.3rem;
+    background: rgba(195, 195, 195, 0.7);
+    margin-top: 1.7rem;
+}
+.experience .span{
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1px;
+}
+/*--======================================== SECTION TWO============================================--*/
+.Team{
+    text-align: center;
+    margin-top: 5rem;
+}
+.companies{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.companies small{
+    font-size: 20px;
+    padding-top: 0;
+}
+.logo_sec{
+    display: flex;
+}
+small{
+    margin-top:3rem;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+.right{
+    animation: right 2s ease-out both alternate;
+  }
+  .btn{
+    animation: btn 1s linear 5s b alternate;
+    animation: beat 1s  cubic-bezier(0.44, -0.45, 0.57, 1.64) 6s forwards infinite alternate;
+  
+  }
+  .btn{
+    animation: btn 1s linear 5s b alternate;
+    animation: beat 1s  cubic-bezier(0.44, -0.45, 0.57, 1.64) 6s forwards infinite alternate;
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*========================================================== M0BILE VIEW ============================================================*/
+@media(max-width: 1024px) {
+    body{
+        padding:0;
+        margin: 0;
+    }
+    #nav-links{
+        display: none;
+    }
+}
