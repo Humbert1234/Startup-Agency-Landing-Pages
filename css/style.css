@@ -1,78 +1,98 @@
 /* styles.css */
 body {
-    font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: white;
     margin: 0;
     padding: 0;
 }
-main{
-    background: #007BFF;
-}
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-header{
-    display: flex;
-    background: #fff;
-    padding: 0.2rem 0.2rem;
-    border-bottom: 1px solid #eaeaea;
-    margin: 0 4rem 0 4rem;
 
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-}
+
 /*============================================ LOGo STYLE=============================================*/
-.logo_p{
-font-size: 20px;
-font-weight: 800;
+.logo_p {
+    font-size: 20px;
+    font-weight: 800;
 }
-.logo_style{
+
+.logo_style {
     color: white;
     background: #366dfc;
     border-radius: 50%;
-    font-size:20px;
+    font-size: 20px;
     font-weight: 800;
     padding: .1rem .6rem .1rem .6rem;
 }
+
+.but {
+    display: none;
+}
+
 /*=========================================== MENU STYLE ===========================================*/
-nav ul {
+nav{
+    background:transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index:11;
+}
+.nav_container{
+    height:100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 1.4rem 0 0  0;
+    padding:.2rem 3rem .2rem 3rem;
+    border-bottom:4px solid rgba(195, 195, 195, 0.4);
+    background: white;
+    margin-top:0;
 }
-
-nav ul li {
-    margin-left: 2.4rem;
+    
+.nav_menu{
+    display:flex;
+    align-items: center;
+    padding-right:2rem;
 }
-
-nav ul li a {
-    color: #333;
-    font-weight: bold;
+.nav_menu li{
+    padding:2rem;
 }
 /*============================================== FIRST SECTION ======================================*/
-.sec1{
-    display:flex;
+.sec1 {
+    top: 4rem;
+    display: flex;
     justify-content: space-between;
 }
-h1{
-    font-size:60px;
+.container{
+    margin-top:5rem;
+}
+.hero-content .span{
+    background-image: linear-gradient(to right, #1624E6 ,#2e6fe7 ,#3ba4f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+h1 {
+    font-size: 60px;
     width: 490px;
-    margin-left:6rem;
+    margin-left: 6rem;
 }
 
-.Hero_video{
+.Hero_video {
     display: flex;
     gap: 3rem;
-    margin:1.5rem 0 0 1rem;
+    margin: 1.5rem 0 0 1rem;
 }
-.Hero_video .sex1_text p{
-    width:410px;
+
+.Hero_video .sex1_text p {
+    width: 410px;
 }
+
 .cta-buttons {
     display: flex;
     gap: 1rem;
@@ -95,156 +115,185 @@ h1{
 .secondary-btn {
     background: #fff;
     border: 1px solid #007BFF;
-    border-radius:8px;
+    border-radius: 8px;
     color: #007BFF;
 }
-.hero-image{
-    width:500px;
+
+.hero-image {
+    width: 500px;
     height: 500px;
 }
+
 /*--======================================== SECTION TWO============================================--*/
-.sec2{
+.sec2 {
     display: flex;
     justify-content: space-between;
     margin: 0 4rem 0 16rem;
 }
+
 .ratings {
     display: flex;
     gap: 1.5rem;
-    margin-top:1.2rem;
+    margin-top: 1.2rem;
 }
-.rating1 i{
-    color:hsl(50, 81%, 56%);
+
+.rating1 i {
+    color: hsl(50, 81%, 56%);
     font-size: 15px;
 }
-.rating1 p{
+
+.rating1 p {
     line-height: 1px;
-    margin-bottom:12px;
+    margin-bottom: 12px;
 }
-.rating1 p{
-    font-size:25px;
+
+.rating1 p {
+    font-size: 25px;
     font-weight: 600;
 }
-.rating .green_star{
-     color:#20A46D;
-     font-size: 15px;
+
+.rating .green_star {
+    color: #20A46D;
+    font-size: 15px;
 }
-.rating{
-    margin-top:.5rem;
+
+.rating {
+    margin-top: .5rem;
 }
-.rating p{
+
+.rating p {
     font-size: 12px;
-    font-weight:600;
+    font-weight: 600;
 }
-.rating .green_star_bg i{
+
+.rating .green_star_bg i {
     color: white;
     background: #20A46D;
     font-size: 12px;
     padding: .2rem .2rem;
 }
-.experience{
+
+.experience {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
-    span{
+
+    span {
         color: grey;
     }
 }
-.line{
+
+.line {
     width: 2px;
     height: 3.3rem;
     background: rgba(195, 195, 195, 0.7);
     margin-top: 1.7rem;
 }
-.experience .span{
+
+.experience .span {
     font-size: 35px;
     font-weight: 800;
     line-height: 1px;
 }
+
 /*--======================================== SECTION TWO============================================--*/
-.Team{
+.Team {
     text-align: center;
     margin-top: 5rem;
-    p{
-        font-size:13px;
+
+    p {
+        font-size: 13px;
         font-weight: 900;
     }
 }
-.companies{
+
+.companies {
     display: flex;
     justify-content: center;
     gap: 4rem;
 }
-.companies small{
-    margin-top:3rem;
+
+.companies small {
+    margin-top: 3rem;
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
 }
-.logo_sec{
+
+.logo_sec {
     display: flex;
     gap: 8px;
 }
 
 /*--======================================== SECTION THREE (workflow)============================================--*/
-.workflow{
-     padding:3rem 4rem 3rem 4rem;
-     background:#0d172a;
-     .Team_image{
+.workflow {
+    padding: 3rem 4rem 3rem 4rem;
+    background: #0d172a;
+
+    .Team_image {
         width: 1145px;
-        border-radius:10px;
+        border-radius: 10px;
     }
-    .workflow1{
+
+    .workflow1 {
         display: flex;
         justify-content: space-between;
 
         /* ====workflow-step===== */
-        .workflow-steps{
-            margin:2rem 0 2rem 0;
+        .workflow-steps {
+            margin: 2rem 0 2rem 0;
             display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap:1rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+
             /* ====steps===== */
-            .step{
-                border-radius:2px;
+            .step {
+                border-radius: 2px;
                 display: flex;
                 gap: 1rem;
                 line-height: 1rem;
-                border:1.5px solid #dbdcdf;
-                border-radius:6px;
+                border: 1.5px solid #dbdcdf;
+                border-radius: 6px;
+
                 /* ===icons===== */
-                i{
-                    color:#dbdcdf;
+                i {
+                    color: #dbdcdf;
                     background: #3d4555;
-                    height:16px;
-                    margin:1rem 1rem 0 1rem;
+                    height: 16px;
+                    margin: 1rem 1rem 0 1rem;
                     padding: 1.4rem 1.4rem;
-                    border-radius:2rem;
+                    border-radius: 2rem;
                 }
+
                 /* === title==== */
-                h3{
-                    font-size:14px;
+                h3 {
+                    font-size: 14px;
                     color: #dbdcdf;
                 }
+
                 /*==== paragrph=== */
-                p{
-                    font-size:15px;
+                p {
+                    font-size: 15px;
                     color: #5b6272;
-                    width:200px;
+                    width: 200px;
                 }
 
             }
         }
-        .Dynamic{
-            margin-left:5.7rem;
-            line-height:normal;
-            h2{
+
+        /* =======Easy, Dynamic=============== */
+        .Dynamic {
+            margin-left: 5.7rem;
+            line-height: normal;
+
+            h2 {
                 font-size: 40px;
-                color:#fefefe;
-                width:410px;
+                color: #fefefe;
+                width: 410px;
             }
-            p{
+
+            p {
                 margin-top: 0;
                 color: #8c919a;
                 width: 420px;
@@ -255,33 +304,309 @@ h1{
 
 
 
+.services-container {
+    margin: 2rem 4rem 2rem 4rem;
+
+    h3 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1em;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .service-button {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .service-item.active .service-content {
+        display: block;
+    }
+
+    .service-item {
+        border-top: 1px solid #ccc;
+        padding: 15px 0;
+
+        .service-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            h2 {
+                font-size: 1.2em;
+                margin: 0;
+            }
+        }
+
+        .service-content {
+            display: none;
+            margin-top: 10px;
+
+            p {
+                margin: 0 0 10px;
+            }
+
+            .service-content img {
+                max-width: 100%;
+            }
+
+            .service-content1 {
+                display: flex;
+                gap: 7rem;
+
+                p {
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+.toggle-btn {
+    font-size: 1.5em;
+    padding: .5rem .5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    .fa-minus {
+        padding: .3rem .4rem;
+        border-radius: 50%;
+        background: #007BFF;
+    }
+
+    .fa-plus {
+        padding: .3rem .4rem;
+        border: 1px solid grey;
+        border-radius: 50%;
+    }
+}
+
+
+/* --=========================================Evoulation Section===================================-- */
+
+.evolution {
+
+    padding: 2rem 4rem 2rem 4rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .evolution_text {
+            margin-top: 2rem;
+        }
+
+        h2 {
+            font-size: 50px;
+            width: 540px;
+        }
+
+        a {
+            padding: .8rem .8rem .8rem .8rem;
+            border-radius: 4rem;
+            color: #eaeaea;
+            background: #366dfc;
+        }
+
+        .p_eva {
+            width: 430px;
+        }
+
+        p {
+            width: 470px;
+            font-size: 17px;
+            margin-left: 2rem;
+        }
+    }
+}
+
+/*=========================================Team Section===================================*/
+.team_m {
+    text-align: center;
+    width: 100%;
+}
+
+.team_text {
+    padding: 2rem 4.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_text p {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.team_text .fa-arrow-left {
+    padding: 0.4rem;
+    border-radius: 50%;
+    border: 1px solid grey;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.team_text .fa-arrow-right {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: #366dfc;
+    cursor: pointer;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.team-member {
+    flex: 0 0 30%;
+    display: none; /* Hide all members initially */
+}
+
+.team_mem_image {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+
+.team_name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_name div {
+    line-height: 0;
+}
+
+.team_name p {
+    display: flex;
+    gap: 1rem;
+}
+
+.team_name i {
+    padding: 0.4rem;
+    border-radius: 50%;
+    background: #0d172a;
+    color: white;
+    align-items: center;
+}
+
+
+/*--=========================================FOOTER Section===================================--*/
+.footer {
+    background: #0d172a;
+    padding: 2rem 4.5rem 2rem 4.5rem;
+
+    a {
+        color: #5b6272;
+        font-size: 10px;
+    }
+
+    .project_ideal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2.5rem;
+        border-bottom: .6px solid rgba(195, 195, 195, 0.4);
+
+        h2 {
+            font-size: 40px;
+            color: #fff;
+            width: 590px;
+        }
+
+        .start-project-btn {
+            padding: 4rem 2.5rem;
+            border-radius: 50%;
+            background: #366dfc;
+            color: white;
+        }
+    }
 
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        border-bottom: 1px solid rgba(195, 195, 195, 0.4);
+        padding-bottom: 1rem;
 
+        .newsletter {
+            .logo {
+                color: white;
+            }
 
+            h3 {
+                color: #eaeaea;
+                font-size: 17px;
+            }
 
+            .form {
+                width: 280px;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+                justify-content: space-between;
 
+                input {
+                    background: transparent;
+                    border: none;
+                    height: 45px;
+                }
 
+                button {
+                    width: 50px;
+                    height: 45px;
+                    border-radius: 4px;
+                    color: #eaeaea;
+                    background: #040913;
+                    border: none;
+                }
+            }
 
+        }
 
+        .footer-links {
+            display: flex;
 
+            ul {
+                margin-right: 3rem;
+                line-height: 1.4rem;
 
+                h3 {
+                    color: #dbdcdf;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
 
+    .terms {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0 0 0;
 
+        .condition {
+            display: flex;
+            gap: 2rem;
+        }
 
+        p {
+            display: flex;
+            gap: 2rem;
+            color: #ccc;
+            background: transparent;
+        }
+    }
+}
 
-.right{
-    animation: right 2s ease-out both alternate;
-  }
-  .btn{
-    animation: btn 1s linear 5s b alternate;
-    animation: beat 1s  cubic-bezier(0.44, -0.45, 0.57, 1.64) 6s forwards infinite alternate;
-  
-  }
-  .btn{
-    animation: btn 1s linear 5s b alternate;
-    animation: beat 1s  cubic-bezier(0.44, -0.45, 0.57, 1.64) 6s forwards infinite alternate;
-  
-  }
 
 
 
@@ -350,10 +675,7 @@ h1{
 
 
 
-  /*========================================================== M0BILE VIEW ============================================================*/
-  @media(max-width: 500px) {
 
-  }
 
 
 
@@ -366,127 +688,779 @@ h1{
 
 
 
-  /*========================================================== M0BILE VIEW ============================================================*/
-@media(max-width: 500px) {
-    body{
-        padding:0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================================== TABLET VIEW ============================================================*/
+@media(max-width:1024px) {
+    body {
+        padding: 0;
         margin: 0;
     }
-    #nav-links{
-        display: none;
+    .nav_container{
+        margin-top: 0;
     }
-/*============================= SECTION ONE =====================================*/
-    .sec1{
-        display: inline-block;
-        h1{
-            font-size: 47px;
-            margin:4rem 0 0 3.7rem;
+    .nav_menu{
+        position: fixed;
+        top: 4rem;
+        right: 5%;
+        height:50%;
+        width: 12rem;
+        flex-direction: column;
+        gap:0;
+        display:none;
+    }
+    
+    .nav_menu li{
+        padding-top:12px;
+        width: 100%;
+        height: 1rem;
+        animation: animateNavIterms 400ms linear forwards;
+        transform-origin:top right;
+        background: #007BFF;
+        opacity: 0;
+    }
+    
+    .nav_menu li:nth-child(2){
+        animation-delay:200ms;
+    }
+    .nav_menu li:nth-child(3){
+        animation-delay:400ms;
+    }
+    .nav_menu li:nth-child(4){
+        animation-delay:600ms;
+    }
+    
+    @keyframes animateNavIterms {
+        0%{
+            transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+        }
+        100%{
+            transform: rotateZ(0) rotateX(0) scale(1);
+            opacity:1;
+        }
+    }
+    
+    .nav_menu li a{
+        background:var(--color-primary);
+        box-shadow:-4rem 6rem 10rem rgba(0,0,0,0.6);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items:center;
+    }
+    
+    .nav_menu li a:hover{
+        background: var(--color-bg2);
+        color:var(--color-white);
+    }
+    
+    .but{
+        display: inline-block;        
+        background: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin: auto 10px;
+        height: 35px;
+        #close{
+          display: none;
+        }
+      }
+    /*============================= SECTION ONE =====================================*/
+    .sec1 {
+        display: flex;
+
+        h1 {
+            font-size: 30px;
+            margin: 4rem 0 0 3.7rem;
             width: 380px;
         }
-        .Hero_video{
+
+        .Hero_video {
             display: inline-block;
-            .Hero_video1{
-                width:330px;
-                height: 330px;
-                margin-left: 3rem;
+
+            .Hero_video1 {
+                width: 300px;
+                height: 300px;
             }
-            .sex1_text p{
+
+            .sex1_text p {
                 width: 350px;
-                margin-left:2rem;
+                margin-left: 2rem;
                 text-align: center;
             }
-            .cta-buttons{
+
+            .cta-buttons {
                 gap: 2.5rem;
                 margin-left: 1.5rem;
             }
         }
-        .hero-image{
+
+        .hero-image {
             width: 370px;
             height: 390px;
-            margin:2rem 2rem;
+            margin-top: 3.5rem;
         }
     }
-/*--======================================== SECTION TWO(RATE STAR OF THE COMPANY)============================================--*/
-    .sec2{
-        display: inline-block;
-        margin: 1rem 0 0 4.6rem;
+
+    /*--======================================== SECTION TWO(RATE STAR OF THE COMPANY)============================================--*/
+    .sec2 {
+        display: flex;
+        margin: 1rem 3rem 0 3rem;
         padding: 0;
     }
-        
-/*--======================================== SECTION TWO(TEAM OF COMPANY)============================================--*/
-    .Team{
-        .companies{
+
+    /*--======================================== SECTION THREE(TEAM OF COMPANY)============================================--*/
+    .Team {
+        .companies {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: .3rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: .1px;
             align-items: center;
-            margin-left:3.5rem;
-            .logo_sec_cen{
+            margin-left: 3.5rem;
+
+            .logo_sec_cen {
                 margin-left: 6rem;
             }
         }
     }
-    
+
+    /* --======================================== SECTION four(OUR SERVICES)============================================-- */
+    .workflow {
+        margin: 0;
+        padding: 1rem 4rem 1rem 4rem;
+        align-items: center;
+
+        .workflow1 {
+            display: inline-block;
+
+            .workflow-steps {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .step {
+                    margin-top: 1rem;
+                }
+            }
+
+            .Dynamic {
+                margin: 0;
+                padding: 0;
+                display: flex;
+
+                h2 {
+                    width: 390px;
+                    font-size: 35px;
+                }
+
+                p {
+                    width: 300px;
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+
+        .Team_image {
+            width: 700px;
+            height: 300px;
+        }
+    }
+
+    /* --========================================= SERVICes Section===================================-- */
+    .services-container {
+
+        .service-item {
+
+            .service-content {
+
+                .service-content1 {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    /* --=========================================Evoulation Section===================================-- */
+
+    .evolution {
+        .container {
+            display: flex;
+            gap: 1rem;
+
+            .evolution_text {
+                margin-top: 1rem;
+            }
+
+            h2 {
+                font-size: 30px;
+                width: 300px;
+            }
+
+            a {
+                padding: .8rem .8rem .8rem .8rem;
+                border-radius: 4rem;
+                color: #eaeaea;
+                background: #366dfc;
+                margin: 2rem 4rem 1rem 4rem;
+            }
+
+            .p_eva {
+                width: 400px;
+            }
+
+            p {
+                width: 400px;
+                font-size: 17px;
+                margin-left: 2rem;
+                margin-left: 0;
+            }
+        }
+    }
+
+    /*=========================================Team Section===================================*/
+    .team_m {
+        .team_text {
+            display: flex;
+
+            h2 {
+                width: 170px;
+            }
+
+            p {
+                display: flex;
+                gap: .4rem;
+                align-items: center;
+
+                .fa-arrow-left {
+                    padding: .4rem .4rem;
+                    border-radius: 50%;
+                    border: 1px solid grey;
+                    color: #ccc;
+                }
+
+                .fa-arrow-right-long {
+                    padding: .5rem .5rem;
+                    border-radius: 50%;
+                    background: #366dfc;
+                }
+
+            }
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            margin: 1rem 1rem 1rem 5rem;
+
+            .team-member {
+                .team_mem_image {
+                    width: 250px;
+                    height: 250px;
+                }
+
+                .team_name {
+                    margin: .5rem 6.8rem 1rem 0rem;
+                    display: flex;
+                    gap: 0;
+
+                    div {
+                        line-height: 0;
+                    }
+
+                    p {
+                        i {
+                            padding: .4rem .4rem;
+                            border-radius: 50%;
+                            background: #0d172a;
+                            color: white;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*--=========================================FOOTER Section===================================--*/
+    .footer {
+        background: #0d172a;
+        padding: 2rem 4.5rem 2rem 4.5rem;
+
+        .project_ideal {
+            display: flex;
+            gap: 2rem;
+
+            h2 {
+                font-size: 15px;
+                font-weight: 700;
+                color: #fff;
+                width: 150px;
+            }
+
+            .start-project-btn {
+                padding: 2.5rem .8rem;
+                border-radius: 50%;
+                background: #366dfc;
+                color: white;
+                font-size: 12px;
+            }
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            margin: .1rem 2rem 0 1rem;
+
+            .newsletter {
+                form {
+                    width: 300px;
+                    border-bottom: 1px solid rgba(195, 195, 195, 0.4);
+                }
+            }
+
+            .footer-links {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .terms {
+            display: flex;
+            margin: .6rem 4rem .6rem 4rem;
+
+            p {
+                margin-left: 2rem;
+
+                i:hover {
+                    color: #366dfc;
+                }
+            }
+        }
+    }
+
 }
- /*========================================================== M0BILE VIEW ============================================================*/
- @media(max-width:106px) {
-    body{
-        padding:0;
+
+
+
+
+/*========================================================== M0BILE VIEW ============================================================*/
+@media(max-width:600px) {
+    body {
+        padding: 0;
         margin: 0;
     }
-    #nav-links{
+
+    #nav-links {
         display: none;
     }
-/*============================= SECTION ONE =====================================*/
-    .sec1{
+
+    /*============================= SECTION ONE =====================================*/
+    .sec1 {
         display: inline-block;
-        h1{
+
+        h1 {
             font-size: 47px;
-            margin:4rem 0 0 1.2rem;
+            margin: 4rem 0 0 3.7rem;
             width: 380px;
         }
-        .Hero_video{
+
+        .Hero_video {
             display: inline-block;
-            .Hero_video1{
-                width:330px;
+
+            .Hero_video1 {
+                width: 330px;
+                height: 330px;
+                margin-left: 3rem;
+            }
+
+            .sex1_text p {
+                width: 350px;
+                margin-left: 2rem;
+                text-align: center;
+            }
+
+            .cta-buttons {
+                gap: 2.5rem;
+                margin-left: 1.5rem;
+            }
+        }
+
+        .hero-image {
+            width: 370px;
+            height: 390px;
+            margin: 2rem 2rem;
+        }
+    }
+
+    /*--======================================== SECTION TWO(RATE STAR OF THE COMPANY)============================================--*/
+    .sec2 {
+        display: inline-block;
+        margin: 1rem 0 0 4.6rem;
+        padding: 0;
+    }
+
+    /*--======================================== SECTION THREE(TEAM OF COMPANY)============================================--*/
+    .Team {
+        .companies {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: .3rem;
+            align-items: center;
+            margin-left: 3.5rem;
+        }
+    }
+
+    /* --======================================== SECTION four(OUR SERVICES)============================================-- */
+    .workflow {
+        margin: 0;
+        padding: 1rem 4rem 1rem 4rem;
+        align-items: center;
+
+        .workflow1 {
+            display: inline-block;
+
+            .workflow-steps {
+                display: inline-block;
+
+                .step {
+                    margin-top: 1rem;
+                }
+            }
+
+            .Dynamic {
+                display: inline-block;
+                margin-left: 1rem;
+
+                h2 {
+                    width: 390px;
+                    font-size: 35px;
+                }
+
+                p {
+                    width: 300px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .Team_image {
+            width: 360px;
+            height: 300px;
+            margin-right: 0;
+        }
+    }
+
+    /* --========================================= SERVICes Section===================================-- */
+    .services-container {
+        .service-item {
+
+            .service-content {
+
+                .service-content1 {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    /* --=========================================Evoulation Section===================================-- */
+
+    .evolution {
+        .container {
+            display: inline-block;
+            justify-content: space-between;
+
+            .evolution_text {
+                margin-top: 2rem;
+            }
+
+            h2 {
+                font-size: 30px;
+                width: 300px;
+            }
+
+            a {
+                padding: .8rem .8rem .8rem .8rem;
+                border-radius: 4rem;
+                color: #eaeaea;
+                background: #366dfc;
+                margin: 2rem 4rem 1rem 4rem;
+            }
+
+            .p_eva {
+                width: 400px;
+            }
+
+            p {
+                width: 400px;
+                font-size: 17px;
+                margin-left: 2rem;
+                margin-left: 0;
+            }
+        }
+    }
+
+    /*=========================================Team Section===================================*/
+    .team_m {
+        .team_text {
+            display: flex;
+
+            h2 {
+                width: 170px;
+            }
+
+            p {
+                display: flex;
+                gap: .4rem;
+                align-items: center;
+
+                .fa-arrow-left {
+                    padding: .4rem .4rem;
+                    border-radius: 50%;
+                    border: 1px solid grey;
+                    color: #ccc;
+                }
+
+                .fa-arrow-right-long {
+                    padding: .5rem .5rem;
+                    border-radius: 50%;
+                    background: #366dfc;
+                }
+
+            }
+        }
+
+        .team-members {
+            display: inline-block;
+
+            .team-member {
+                margin: 0 auto;
+                justify-content: center;
+
+                .team_mem_image {
+                    width: 350px;
+                    height: 350px;
+                }
+
+                .team_name {
+                    display: flex;
+                    margin: 0 auto;
+
+                    div {
+                        line-height: 0;
+                    }
+
+                    p {
+                        display: flex;
+                        gap: 1rem;
+
+                        i {
+                            padding: .4rem .4rem;
+                            border-radius: 50%;
+                            background: #0d172a;
+                            color: white;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*--=========================================FOOTER Section===================================--*/
+    .footer {
+        background: #0d172a;
+        padding: 2rem 4.5rem 2rem 4.5rem;
+
+        .project_ideal {
+            display: flex;
+            gap: 2rem;
+
+            h2 {
+                font-size: 15px;
+                font-weight: 700;
+                color: #fff;
+                width: 150px;
+            }
+
+            .start-project-btn {
+                padding: 2.5rem .5rem;
+                border-radius: 50%;
+                background: #366dfc;
+                color: white;
+                font-size: 12px;
+            }
+        }
+
+        .footer-content {
+            display: inline-block;
+            align-items: center;
+            margin: .1rem 2rem 0 1rem;
+
+            .newsletter {
+                form {
+                    width: 300px;
+                    border-bottom: 1px solid rgba(195, 195, 195, 0.4);
+                }
+            }
+
+            .footer-links {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .terms {
+            display: inline-block;
+            margin: .6rem 3rem .6rem 5rem;
+
+            p {
+                margin-left: 2rem;
+
+                i:hover {
+                    color: #366dfc;
+                }
+            }
+        }
+    }
+}
+
+/*========================================================== M0BILE SMALL VIEW ============================================================*/
+@media(max-width:400px) {
+    nav{
+        width:50vh;
+        
+    }
+    .nav_container{
+        width:100%;
+    }
+
+    main{
+        width: fit-content;
+    }
+    
+    .Team{
+        p{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .companies{
+            padding-left: 1rem;
+        }
+    }
+}
+
+/*========================================================== M0BILE VIEW ============================================================*/
+@media(max-width:106px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .nav_container{
+        width:100%;
+    }
+    /*============================= SECTION ONE =====================================*/
+    .sec1 {
+        display: inline-block;
+
+        h1 {
+            font-size: 47px;
+            margin: 4rem 0 0 1.2rem;
+            width: 380px;
+        }
+
+        .Hero_video {
+            display: inline-block;
+
+            .Hero_video1 {
+                width: 330px;
                 height: 330px;
                 margin-left: 1rem;
             }
-            .sex1_text p{
+
+            .sex1_text p {
                 width: 350px;
-                margin-left:.8rem;
+                margin-left: .8rem;
                 text-align: center;
             }
-            .cta-buttons{
+
+            .cta-buttons {
                 gap: 1.5rem;
-                margin-left:0;
+                margin-left: 0;
             }
         }
-        .hero-image{
+
+        .hero-image {
             width: 370px;
             height: 390px;
-            margin:2rem 2rem;
+            margin:0;
         }
     }
-/*--======================================== SECTION TWO(RATE STAR OF THE COMPANY)============================================--*/
-    .sec2{
+
+    /*--======================================== SECTION TWO(RATE STAR OF THE COMPANY)============================================--*/
+    .sec2 {
         display: inline-block;
         margin: 1rem 0 0 4.6rem;
         padding: 0;
     }
-        
-/*--======================================== SECTION TWO(TEAM OF COMPANY)============================================--*/
-    .Team{
-        .companies{
+
+    /*--======================================== SECTION TWO(TEAM OF COMPANY)============================================--*/
+    .Team {
+        margin:2rem 0 2rem 0;
+        .companies {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: .3rem;
-            align-items: center;
-            margin-left:3.5rem;
-            .logo_sec_cen{
-                margin-left: 6rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap:0;
+            margin-left:0;
+            .logo_sec{
+                display: inline;
+                small{
+                    font-size: 20px;
+                }
+            }
+            .logo_sec_cen {
+                margin-left:0;
             }
         }
     }
-    
+    .footer{
+        .project_ideal{
+            h2{
+                font-size:1px;
+            }
+        }
+    }
+
 }
