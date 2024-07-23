@@ -749,6 +749,7 @@ h1 {
         transform-origin:top right;
         background: #007BFF;
         opacity: 0;
+        color: #ccc;
     }
     
     .nav_menu li:nth-child(2){
