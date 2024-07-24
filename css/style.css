@@ -1415,12 +1415,30 @@ h1 {
 }
 
 /*========================================================== M0BILE SMALL VIEW ============================================================*/
-@media(max-width:400px) {
+@media(max-width:320px) {
     nav {
-        width: 80vh;
+        width: 90vh;
 
     }
+    .sec1{
+        margin-left:3rem;
+    }
 
+     .workflow-steps{
+        padding-left:1rem;
+        .step{
+            width: 380px;
+        }
+
+     }
+     .workflow .workflow1 .Dynamic{
+        padding-left:1.4rem;
+   
+
+    }
+    .Team_image{
+        padding-left:1rem;
+    }
     .sec6 {
         font-size: 230px;
         font-weight: 400px;
@@ -1444,6 +1462,8 @@ h1 {
     }
 
     .Team {
+        padding-right:3rem;
+
         p {
             margin: 0;
             padding: 0;
@@ -1451,8 +1471,11 @@ h1 {
         }
 
         .companies {
-            padding-left: 1rem;
+            padding-left: 1.5rem;
         }
+    }
+    .team-member{
+        padding-right:4rem;
     }
 }
 
